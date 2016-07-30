@@ -1,0 +1,71 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#ffffff"
+    android:orientation="vertical" >
+
+    <RelativeLayout
+        android:id="@+id/title"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/height_top_bar"
+        android:background="#ffffff"
+        android:gravity="center_vertical" >
+
+        <ImageView 
+            android:id="@+id/send_back"
+			android:layout_marginLeft="11dp"            
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:src="@drawable/mm_title_back"/>
+
+        <TextView
+            android:id="@+id/add_list_friends"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerInParent="true"
+            android:text="朋友验证"
+            android:textColor="#ff000000"
+            android:textSize="18sp" />
+
+        <Button
+            android:id="@+id/sendyanzheng"
+            android:layout_width="54dp"
+            android:layout_height="match_parent"
+            android:layout_alignParentRight="true"
+            android:layout_centerVertical="true"
+            android:background="@drawable/common_tab_bg"
+            android:text="发送"
+            android:textColor="#00b4ff"
+            android:textSize="16sp" />
+    </RelativeLayout>
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="1dp"
+        android:background="#dddddd" />
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="39dp"
+        android:background="#ffffff"
+        android:gravity="center"
+        android:text="你需要发送验证申请，等对方通过好友验证" />
+
+    <EditText
+        android:id="@+id/edit_send"
+        android:layout_width="match_parent"
+        android:layout_height="39dp"
+        android:background="@drawable/button_normal_shape"
+        android:ems="10"
+        android:hint="输入验证消息"
+        android:paddingLeft="5dp"
+        android:singleLine="true"
+        android:textColorHint="#b3b3b3"
+        android:textSize="18sp" >
+        <requestFocus />
+        
+        
+    </EditText>
+
+</LinearLayout>
